@@ -230,8 +230,25 @@ body {
     background-color: #fffbf4;
 }
 
+/* samsung S8 */
+
 /* iphone X */
-@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+@media only screen 
+and (min-device-width : 360px) 
+and (min-device-height : 740px)
+and (max-device-width : 375px) 
+and (max-device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3), 
+only screen 
+and (min-device-width : 360px) 
+and (min-device-height : 740px)
+and (max-device-width : 375px) 
+and (max-device-height : 812px) 
+and (device-pixel-ratio : 4), 
+only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) { 
     .date {
         height: 38px;
     }
