@@ -1,0 +1,496 @@
+
+@font-face {
+    font-family: "zalo-font";
+    src: local('Avant Garde'), url('./avantg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "zalo-font";
+    src: local('Avant Garde'), url('./avantgd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+.stt {
+    contain:strict;
+}
+.flx {
+    display: flex;
+}
+.flx-cell {
+    flex: 1 1 auto;
+}
+
+.flx-center {
+    justify-content: center; 
+    align-items: center;
+}
+.flx-col {
+    flex-direction: column;
+}
+.flx-sp {
+    justify-content: space-between;
+}
+.month{
+    padding: 14px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    background-color: #b61213;
+}
+
+.head {
+    color: white;
+    font-size: 16px;
+}
+
+.date.dow { 
+    height: 23px;
+    margin-bottom: 2px;
+}
+.month-date {
+    position: relative;
+}
+.lunar {
+    bottom: 2px; right: 4px;
+}
+.solar {
+    top: 1px; left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.lunar {
+    font-size: 11px;
+    color: white;
+}
+.abs {
+    position: absolute;
+}
+.month-date.empty {
+    background-color: #a00405;
+}
+.month-date.normal {
+    background-color: #ffce33;
+}
+.month-date.normal.cn {
+    background-color:#dba819;
+}
+.normal > .solar {
+    color: #a56501;
+}
+.normal.cn > .solar {
+    color: #d0021b;
+}
+
+.normal.cn > .lunar {
+    color: #8b572a;
+}
+
+.month-date.holiday {
+    background-color: #fddca7;
+}
+.holiday > .solar{
+    color : #d0021b;
+}
+.holiday > .lunar{
+    color : #d0021b;
+}
+.month-date.today {
+    background-color: #5f9a48;
+}
+.today > .solar {
+    color: #fddca7;
+}
+.today > .lunar {
+    color: #f8e71c;
+}
+.date {
+    height: 26px;
+    margin: 1px;
+}
+
+.btn {
+    cursor: pointer;
+}
+.hoatet {
+    background-repeat: no-repeat;
+    background-image: url("./hoatet.png");
+    background-size: contain;
+    background-position: left;
+    width: 156px;
+    height: 84px;
+    flex: 1 1 auto;
+}
+.hoatet2 {
+    background-repeat: no-repeat;
+    background-image: url("./hoatet_2.png");
+    background-size: contain;
+    background-position: right;
+    width: 150px; height: 91px;
+    flex: 1 1 auto;
+}
+.prev-year {
+    background-repeat: no-repeat;
+    background-image: url("./btn_first.png");
+    background-size: contain;
+    width: 17px; height: 22px;
+}
+.prev-month {
+    background-repeat: no-repeat;
+    background-image: url("./btn_back.png");
+    background-size: contain;
+    width: 9.3px; 
+    height: 17.6px;
+}
+.next-year {
+    background-repeat: no-repeat;
+    background-image: url("./btn_last.png");
+    background-size: contain;
+    width: 17px; height: 22px;
+}
+.next-month {
+    background-repeat: no-repeat;
+    background-image: url("./btn_next.png");
+    background-size: contain;
+    width: 9.3px; 
+    height: 17.6px;
+}
+.nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading {
+    height: 55px;
+    color: #d0021b;
+    font-size:20px;
+    font-weight: bold;
+    justify-content: center;
+}
+.heading-text {
+    margin-top:22px;
+}
+.heading2{
+    height: 84px;
+    font-size: 72px;
+    font-weight: bold;
+    align-items: center;
+}
+.heading2-text {
+    flex: 0 0 auto;
+    width: 81px;
+    text-align: center;
+}
+.heading3{
+    font-size: 21px;
+    font-weight: bold;
+    justify-content: center;    
+}
+.middle {
+    font-size: 13px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    padding-right: 25px;
+    padding-left:25px;
+    justify-content: space-between;    
+}
+.middle-right, .middle-left {
+    text-align: center;
+}
+.middle-date {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.middle-icon {
+    width: 46px; height: 46px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+}
+.goodhours {
+    padding-bottom: 22px;
+    padding-top: 9px;
+    font-size: 12px;
+    text-align: center;
+}
+.main {
+    height: 100vh;   
+    overflow: hidden; 
+}
+
+body {
+    margin: 0px;
+    font-family: zalo-font, Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: #fffbf4;
+}
+
+/* iphone X */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+    .date {
+        height: 45px;
+    }
+    .date.dow{
+        height: 34px;
+    }
+    .lunar {
+        font-size: 12px;
+    }
+    .middle {
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+    .goodhours {
+        font-size: 15px;
+        
+    }
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* iphone 8 */
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) { 
+    .date {
+        height: 32px;     
+    }
+    .middle {
+        font-size: 15px;
+        padding-bottom: 22px;
+    }
+
+    .goodhours {
+        font-size: 14px;
+    }
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* iphone 8 plus */
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) { 
+    .date {
+        height: 39px;
+    }
+    .date.dow{
+        height: 28px;
+    }
+    .middle {
+        font-size: 16px;
+        padding-bottom: 22px;
+    }
+    .goodhours {
+        
+        font-size: 15px;
+    }
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3), 
+    screen and (device-width: 360px) and (device-height: 640px) and (device-pixel-ratio: 3)  {
+    .date {
+        height: 32px;     
+    }
+    .middle {
+        font-size:14px;
+        padding-right: 20px; 
+        padding-left: 20px;
+    }
+    .nav {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .goodhours {
+        font-size: 13px;
+    }
+}
+
+@media  screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4), 
+ screen and (device-width: 360px) and (device-height: 640px) and (device-pixel-ratio: 4) {
+    .date {
+        height: 45px;
+    }
+    .date.dow{
+        height: 34px;
+    }
+    .lunar {
+        font-size: 12px;
+    }
+    .middle {
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+    .goodhours {
+        font-size: 15px;
+        
+    }
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* iPhone 4/4S */
+@media 
+only screen and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+and (-webkit-device-pixel-ratio: 2) 
+and (device-aspect-ratio: 2/3)
+{
+
+    .heading-text {
+        margin-top: 2px;
+    }
+    .heading {
+        height: 30px;
+    }
+    .heading2{
+        height: 70px;
+    }
+    .heading3 {
+        font-size: 18px;
+    }
+    .head {
+        font-size: 14px;
+    }
+    .date {
+        height: 25px;
+    }
+    .date.dow {
+        height: 20px;
+    }
+    .lunar {
+        font-size: 10px;
+    }
+    .nav {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .middle {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .goodhours {
+        font-size: 11px;
+    }
+}
+
+/* Nexus 6p */
+@media screen
+and (min-width: 412px)
+and (max-width: 435px)
+and (min-height: 732px)
+and (max-height: 773px){
+    .middle {
+        font-size: 16px;
+        padding-bottom: 22px;
+    }
+    .date {
+        height: 36px;
+    }
+    .date.dow {
+        height: 30px;
+    }
+    .goodhours {
+        font-size: 15px;
+    }
+    .nav {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+}
+
+/* ipad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+    .date {
+        height: 60px;
+        margin: 3px;
+    }
+    .solar {
+        font-size: 24px;
+    }
+    .lunar {
+        font-size: 20px;
+    }
+    .nav {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .middle {
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .middle-date {
+        font-size: 35px;
+    }
+    .middle-icon {
+        width: 70px; height: 70px;
+    }
+    .goodhours {
+        font-size: 24px;
+        padding-top: 18px;
+    }
+    .heading3 {
+        font-size: 30px;
+    }
+    .heading2 {
+        font-size: 100px;
+        height: 110px;
+    }
+    .heading2-text {
+        width: 160px;
+    }
+    .heading {
+        font-size: 33px; height: 71px;
+    }
+    .head {
+        font-size: 23px;
+
+    }
+    .date.dow {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-device-height: 520px) {
+    .date {
+        height: 23px;        
+    }
+    .nav {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .heading-text {
+        margin-top: 2px;
+    }
+    .heading {
+        height: 30px;
+        font-size: 18px;
+    }
+    .heading2{
+        height: 70px;
+    }
+    .heading3 {
+        font-size: 18px;
+    }
+    .head {
+        font-size: 14px;
+    }
+}
