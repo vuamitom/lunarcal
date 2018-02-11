@@ -211,6 +211,7 @@
 .middle-date {
     font-size: 24px;
     font-weight: bold;
+    margin-top: 5px;
 }
 .middle-icon {
     width: 46px; height: 46px;
@@ -374,7 +375,7 @@ and (device-aspect-ratio: 2/3)
         font-size: 14px;
     }
     .date {
-        height: 26px;
+        height: 25px;
     }
     .date.dow {
         height: 20px;
@@ -472,6 +473,32 @@ and (max-device-width : 1024px)  {
     }
     .date.dow {
         height: 40px;
+    }
+}
+
+@media only screen and (max-device-height: 520px) {
+    .date {
+        height: 23px;        
+    }
+    .nav {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .heading-text {
+        margin-top: 2px;
+    }
+    .heading {
+        height: 30px;
+        font-size: 18px;
+    }
+    .heading2{
+        height: 70px;
+    }
+    .heading3 {
+        font-size: 18px;
+    }
+    .head {
+        font-size: 14px;
     }
 }
 </style>
