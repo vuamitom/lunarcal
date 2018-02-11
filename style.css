@@ -246,6 +246,12 @@ and (max-device-width : 375px)
 and (max-device-height : 812px) 
 and (device-pixel-ratio : 4), 
 only screen 
+and (min-device-width : 360px) 
+and (min-device-height : 740px)
+and (max-device-width : 375px) 
+and (max-device-height : 812px) 
+and (device-pixel-ratio : 2), 
+only screen 
 and (device-width : 375px) 
 and (device-height : 812px) 
 and (-webkit-device-pixel-ratio : 3) { 
@@ -280,6 +286,9 @@ and (-webkit-device-pixel-ratio : 3) {
         font-size: 15px;
         padding-bottom: 22px;
     }
+    .lunar {
+        font-size: 11px;
+    }
 
     .goodhours {
         font-size: 14px;
@@ -301,6 +310,10 @@ and (-webkit-device-pixel-ratio : 3) {
     }
     .goodhours {        
         font-size: 15px;
+    }
+
+    .lunar {
+        font-size: 11px;
     }
     
 }
@@ -337,7 +350,7 @@ and (-webkit-device-pixel-ratio : 3) {
         height: 34px;
     }
     .lunar {
-        font-size: 12px;
+        font-size: 11px;
     }
     .middle {
         font-size: 16px;
