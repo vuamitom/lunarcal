@@ -233,10 +233,10 @@ body {
 /* iphone X */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
     .date {
-        height: 45px;
+        height: 38px;
     }
     .date.dow{
-        height: 34px;
+        height: 30px;
     }
     .lunar {
         font-size: 12px;
@@ -257,7 +257,7 @@ body {
 /* iphone 8 */
 @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) { 
     .date {
-        height: 32px;     
+        height: 30px;     
     }
     .middle {
         font-size: 15px;
@@ -267,10 +267,7 @@ body {
     .goodhours {
         font-size: 14px;
     }
-    .nav {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+    
 }
 
 /* iphone 8 plus */
@@ -285,14 +282,10 @@ body {
         font-size: 16px;
         padding-bottom: 22px;
     }
-    .goodhours {
-        
+    .goodhours {        
         font-size: 15px;
     }
-    .nav {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+    
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
@@ -337,10 +330,7 @@ body {
         font-size: 15px;
         
     }
-    .nav {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    
 }
 
 
@@ -408,10 +398,7 @@ and (max-height: 773px){
     .goodhours {
         font-size: 15px;
     }
-    .nav {
-        margin-top: 22px;
-        margin-bottom: 22px;
-    }
+    
 }
 
 /* ipad */
@@ -478,7 +465,7 @@ and (max-device-width : 1024px)  {
         margin-bottom: 6px;
     }
     .heading-text {
-        margin-top: 2px;
+        margin-top: 5px;
     }
     .heading {
         height: 30px;
