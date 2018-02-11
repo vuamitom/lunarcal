@@ -276,7 +276,7 @@ body {
 /* iphone 8 plus */
 @media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) { 
     .date {
-        height: 39px;
+        height: 30px;
     }
     .date.dow{
         height: 28px;
@@ -290,8 +290,8 @@ body {
         font-size: 15px;
     }
     .nav {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 
