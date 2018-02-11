@@ -163,14 +163,14 @@
     align-items: center;
 }
 .heading {
-    height: 55px;
+    height: 45px;
     color: #d0021b;
     font-size:20px;
     font-weight: bold;
     justify-content: center;
 }
 .heading-text {
-    margin-top:22px;
+    margin-top:12px;
 }
 .heading2{
     height: 84px;
