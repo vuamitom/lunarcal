@@ -418,19 +418,22 @@ function printFrame() {
 	res.push('</div>');
 	
 	res.push('<div class="middle ">');
-	res.push('<div class="middle-left flx-cell">');
-	res.push('<div class="middle-lmonth" id="lunarMonth"></div>');
-	res.push('<div class="middle-date" id="lunarDate"></div>');
-	res.push('<div class="middle-year" id="lunarYear"></div>');
-	res.push('</div>');
-	res.push('<div class="middle-icon" id="yearIcon"> ');	
-	res.push('</div>');
-	res.push('<div class="middle-right flx-cell">');
-	res.push('<div class="middle-month" id="lunarMonth2"></div>');
-	res.push('<div class="middle-day" id="lunarDay"></div>');
-	res.push('<div class="middle-hour" id="lunarHour"></div>');
-	res.push('<div class="middle-season" id="lunarSeason"></div>');
-	res.push('</div>');	
+		res.push('<div class="middle-wrapper flx">');
+			res.push('<div class="middle-left flx-cell">');
+			res.push('<div class="middle-lmonth" id="lunarMonth"></div>');
+			res.push('<div class="middle-date" id="lunarDate"></div>');
+			res.push('<div class="middle-year" id="lunarYear"></div>');
+			res.push('</div>');
+			res.push('<div class="flx flx-center">')
+			res.push('<div class="middle-icon" id="yearIcon"> </div>');	
+			res.push('</div>');
+			res.push('<div class="middle-right flx-cell">');
+			res.push('<div class="middle-month" id="lunarMonth2"></div>');
+			res.push('<div class="middle-day" id="lunarDay"></div>');
+			res.push('<div class="middle-hour" id="lunarHour"></div>');
+			res.push('<div class="middle-season" id="lunarSeason"></div>');
+			res.push('</div>');	
+		res.push('</div>');	
 	res.push('</div>')
 
 	res.push('<div class="goodhours">');
