@@ -428,10 +428,10 @@ function printFrame() {
 			res.push('<div class="middle-icon" id="yearIcon"> </div>');	
 			res.push('</div>');
 			res.push('<div class="middle-right flx-cell">');
-			res.push('<div class="middle-month" id="lunarMonth2"></div>');
-			res.push('<div class="middle-day" id="lunarDay"></div>');
-			res.push('<div class="middle-hour" id="lunarHour"></div>');
-			res.push('<div class="middle-season" id="lunarSeason"></div>');
+			res.push('<div class="middle-month  middle-line" id="lunarMonth2"></div>');
+			res.push('<div class="middle-day middle-line" id="lunarDay"></div>');
+			res.push('<div class="middle-hour middle-line" id="lunarHour"></div>');
+			res.push('<div class="middle-season middle-line" id="lunarSeason"></div>');
 			res.push('</div>');	
 		res.push('</div>');	
 	res.push('</div>')
