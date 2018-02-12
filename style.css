@@ -433,7 +433,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  { 
 
     .date {
-        height: 60px;
+        height: 55px;
         margin: 3px;
     }
     .solar {
@@ -443,8 +443,8 @@ and (max-device-width : 1024px)  {
         font-size: 20px;
     }
     .nav {
-        margin-bottom: 30px;
-        margin-top: 30px;
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
     .middle {
         font-size: 25px;

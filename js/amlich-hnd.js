@@ -574,7 +574,7 @@ function paintToday(dd, mm, yy, leap, jd, sday, smonth, syear) {
 
 	// s = dayOfWeek + " " + solarDay + "/" + solarMonth + "/" + solarYear;
 	// s += " -+- ";
-	document.getElementById('lunarDate').innerText = lunar.day;
+	document.getElementById('lunarDate').innerText = lunar.day;	
 	document.getElementById('lunarMonth').innerText = "Th\341ng "+ MONTHNAMES[lunar.month -1]+ (lunar.leap === 1? " nhu\u1EADn": "");
 	// s += "\nGi\u1EDD \u0111\u1EA7u ng\u00E0y: "+getCanHour0(jd)+" "+CHI[0];
 	// s += "\nTi\u1EBFt: "+TIETKHI[getSunLongitude(jd+1, 7.0)];
@@ -593,7 +593,7 @@ function paintToday(dd, mm, yy, leap, jd, sday, smonth, syear) {
 	// console.log(s);
 	// s += "\nGi\u1EDD ho\u00E0ng \u0111\u1EA1o: "+getGioHoangDao(jd);
 	// alert(s);
-	document.getElementById('yearIcon').style.backgroundImage = 'url("./images/tuoi_' + ((lunar.year+8) % 12 + 1)  + '.png")';
+	document.getElementById('yearIcon').style.backgroundImage = 'url("./images/tuoi_' + ((lunar.jd+1) % 12 + 1)  + '.png")';
 }
 
 
