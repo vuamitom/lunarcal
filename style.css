@@ -204,10 +204,13 @@
 }
 .middle-right, .middle-left {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.middle-line {
+/* .middle-line {
     padding-bottom: 2px;
-}
+} */
 .middle-date {
     font-size: 24px;
     font-weight: bold;
@@ -291,9 +294,9 @@ and (-webkit-device-pixel-ratio : 3) {
         font-size: 15px;
         padding-bottom: 22px;
     }
-    .middle-line {
+    /* .middle-line {
         padding-bottom: 0.5px;    
-    }
+    } */
     .lunar {
         font-size: 11px;
     }
@@ -364,9 +367,9 @@ and (-webkit-device-pixel-ratio : 3) {
         font-size: 15px;
         padding-bottom: 15px;
     }
-    .middle-line {
+    /* .middle-line {
         padding-bottom: 0.5px;    
-    }
+    } */
     .goodhours {
         font-size: 14px;        
     }
@@ -414,9 +417,9 @@ and (device-aspect-ratio: 2/3)
         font-size: 12px;
         padding-bottom: 10px;
     }
-    .middle-line {
+    /* .middle-line {
         padding-bottom: 3px;
-    }
+    } */
     .goodhours {
         font-size: 11px;
     }
