@@ -416,9 +416,7 @@ function printFrame() {
 	res.push('<div class="heading2 stt flx flx-sp"><div class="hoatet"> </div><div class="heading2-text" id="solarDate"></div><div class="hoatet2"> </div></div>');
 	res.push('<div class="heading3 flx"><div class="heading3-text" id="dayOfWeek"></div></div>')
 	res.push('</div>');
-	res.push('<div class="goodhours">');
-	res.push('<div class="goodhours-text" id="goodHours"></div>')
-	res.push('</div>')
+	
 	res.push('<div class="middle ">');
 	res.push('<div class="middle-left flx-cell">');
 	res.push('<div class="middle-lmonth" id="lunarMonth"></div>');
@@ -432,8 +430,12 @@ function printFrame() {
 	res.push('<div class="middle-day" id="lunarDay"></div>');
 	res.push('<div class="middle-hour" id="lunarHour"></div>');
 	res.push('<div class="middle-season" id="lunarSeason"></div>');
-	res.push('</div>');
+	res.push('</div>');	
 	res.push('</div>')
+
+	res.push('<div class="goodhours">');
+	res.push('<div class="goodhours-text" id="goodHours"></div>')
+	res.push('</div>');
 	
 	printTableFrame(res);
 	res.push('</div>')
